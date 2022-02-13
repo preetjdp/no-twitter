@@ -1,0 +1,21 @@
+{
+    "name": "No Twitter",
+    "short_name": "NoTwitter",
+    "description": "A minimal Twitter theme that drastically simplifies and declutters the new Twitter UI.",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+          "js": [
+            "applyOptions.js"
+          ],
+          "matches": [
+            "https://twitter.com/*",
+            "https://mobile.twitter.com/*"
+          ]
+        }
+      ]
+}
